@@ -1,0 +1,159 @@
+$leftMenuCOlor: #78829d;
+$battonColor: #f2795a;
+$btnCOlorText: #fff;
+$h2Color: #444c63;
+$padding-left: 10px;
+$colors: (
+    'must':  #e64c66,
+    'best':  #ffab00,
+    'classic': #00bfdd,
+    'non': #7874cf
+);
+
+%leftColors {
+    color: $leftMenuCOlor;
+}
+%leftFontSize {
+    font-size: 1em;
+}
+
+.l-left {
+    a, span, p {
+       @extend %leftColors;
+       @extend %leftFontSize;
+    }
+
+    li {
+        padding: 10px;
+    }
+
+    .btn {
+        margin: 34px;
+        width: 160px;
+        height: 44px;
+        background-color: $battonColor;
+        border: none;
+        color: $btnCOlorText;
+    }
+
+}
+
+.left-menu {
+    padding-left: $padding-left;
+    .n-2 {
+        background-color: #15a4fa;
+
+        a {
+            color: #fff;
+        }
+    }
+
+}
+
+.choose-books {
+    padding: 10px 1px 10px $padding-left;
+    @extend %leftFontSize;
+}
+
+.choose-list {
+    @each $name, $color in $colors {
+        .#{$name} {
+            i {
+            color: $color
+            }
+        }
+    }
+
+    i {
+        font-size: 6px;
+    }
+}
+.left-footer {
+    font-size: 0.8em;
+    padding-left: $padding-left;
+    .foter-list {
+        li {
+            list-style-type: none;
+        }
+    }
+
+    i {
+        @extend %leftColors;
+    }
+
+    .inform {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+    }
+
+    span {
+        width: 130px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .time {
+        padding-left: 35px;
+    }
+
+}
+
+.h2 {
+    color: $h2Color;
+}
+
+.menu-input {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    vertical-align: middle;
+
+    .main-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        li {
+            padding: 10px;
+        }
+
+        .l-1 {
+                width: 72px;
+                height: 20px;
+                border-radius: 9.5px;
+                background-color: #97b3ce;
+            }
+    }
+
+}
+
+.search {
+    width: 400px;
+    height: 32px;
+    border-radius: 15.5px;
+    border: solid 1px rgba(140, 151, 178, 0.4);
+    background-color: #ffffff;
+
+    .sear-inp {
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        width: 344px;
+        vertical-align: middle;
+        margin: 10px;
+    }
+
+    .sub-inp {
+        width: 20px;
+        height: 30px;
+        border: none;
+    }
+}
+
+.l-grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}

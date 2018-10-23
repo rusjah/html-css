@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Proxima Nova Condensed Regular';
+	src: url('../fonts/ Proxima-Nova-Condensed-Regular.otf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Condensed Bold';
+	src: url('../fonts/Proxima-Nova-Condensed-Bold.otf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Condensed Thin Italic';
+	src: url('../fonts/Proxima-Nova-Condensed-Thin-Italic.otf')  format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+}
+
+body{
+	width: 150px;
+}

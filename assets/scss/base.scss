@@ -1,0 +1,25 @@
+$fontFamily: 'Proxima Nova Condensed Regular', 'Times New Roman', sans-serif;
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: $fontFamily;
+}
+
+.wrap {
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: row;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+nav {
+    list-style: none;
+}
